@@ -1,0 +1,21 @@
+.row {
+    padding: 24px;
+    background-color: #eef5f9;
+    
+
+}
+
+.contenedor {
+    width: auto;
+}
+
+.parte1tex, .parte2img{
+    
+    display: inline-block;
+}
+
+.img-proyecto{
+    box-shadow: 10px 10px 30px rgb(34, 33, 33);
+    box-shadow: ejeX ejeY difumasion rebeccapurple;
+    
+}

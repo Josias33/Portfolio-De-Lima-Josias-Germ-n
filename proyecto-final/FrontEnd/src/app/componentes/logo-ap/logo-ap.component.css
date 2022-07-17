@@ -1,0 +1,112 @@
+/*CONTENEDOR PRINCIPAL*/
+
+.container{
+    display: flex;/*acomoda los iconos uno alado del otro*/
+    justify-content: space-between; /*corre el bloque de iconos a la derecha*/
+    align-items:center; /*baja al centro el bloque de iconos que estaban en la derecha arriba*/
+}
+
+
+
+
+/*---parametros del logo de argentina programa---*/
+#logoap{ 
+  width: 125px;
+}
+
+/*parametros de las imagenes de las redes sociales*/
+img{
+    width: 40px;  
+    margin-right: 5px;
+}
+
+/*Esta clase es la del boton del Boostrap*/
+.btn{
+    margin-right: 10px;
+    border-width: medium;
+}
+
+/*##########################################################################################################*/
+
+
+/*---Tamaño ajustado para un Telefono Celular Estandar /lOGO Y REDES/---*/
+
+/*de 575px para abajo, aplicar la configuracion*/
+@media (max-width: 575px){
+
+.container {
+        flex-direction: column;
+    }
+
+    .redes {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+
+    .redes img {
+        margin: 2px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .btn {
+        margin: 1px;
+        margin: 2px;
+        margin-left: 50px;
+    }
+
+    #logoap {
+        margin-right: 215px;
+    }
+
+}
+
+/*De 375px para abajo aplica la siguiente configuracion en Logo y Redes*/
+@media (max-width: 355px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .btn {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    #logoap {
+        margin-right: 25px;
+    }
+
+}
+
+/*De 280px para abajo aplica la siguiente configuracion en Logo y Redes*/
+@media (max-width: 280px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .btn {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    #logoap {
+        margin-right: 25px;
+    }
+
+}
+/*##########################################################################################################*/
